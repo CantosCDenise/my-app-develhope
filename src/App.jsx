@@ -4,6 +4,7 @@ import { Counter } from "./Counter";
 import { Hello } from "./Hello";
 import { Message } from "./Message";
 import { Welcome } from "./Welcome";
+import { Clock } from "./clock";
 
 export function App(){
     function handleShowTime(){
