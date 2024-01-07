@@ -18,7 +18,8 @@ export function App(){
             <Hello/>
             <Hello/>
             <Message/>
-            <Welcome name="Denise" age={24}/>
+            <Age age={24}/>
+            <Welcome name="Denise"/>
             <AlertClock onClick={handleShowTime}/>
             <Counter/>
             <MouseClicker/>
