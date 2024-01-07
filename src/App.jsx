@@ -3,8 +3,8 @@ import { AlertClock } from "./AlertClock";
 import { Counter } from "./Counter";
 import { Hello } from "./Hello";
 import { Message } from "./Message";
+import { MouseClicker } from "./MouseClicker";
 import { Welcome } from "./Welcome";
-import { Clock } from "./clock";
 
 export function App(){
     function handleShowTime(){
@@ -21,6 +21,7 @@ export function App(){
             <Welcome name="Denise" age={24}/>
             <AlertClock onClick={handleShowTime}/>
             <Counter/>
+            <MouseClicker/>
         </div>
     )
 }
