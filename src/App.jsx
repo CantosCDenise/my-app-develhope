@@ -8,6 +8,7 @@ import { Message } from "./Message";
 import { MouseClicker } from "./MouseClicker";
 import { Welcome } from "./Welcome";
 import { Login } from "./Login";
+import { UncontrolledLogin } from "./UncontrolledLogin";
 
 export function App(){
     function handleShowTime(){
@@ -28,6 +29,7 @@ export function App(){
             <Clock/>
             <InteractiveWelcome/>
             <Login/>
+            <UncontrolledLogin/>
         </div>
     )
 }
