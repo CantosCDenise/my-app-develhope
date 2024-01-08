@@ -1,4 +1,5 @@
 import { Clock } from "../Clock";
+import { InteractiveWelcome } from "../InteractiveWelcome";
 import { Age } from "./Age";
 import { AlertClock } from "./AlertClock";
 import { Counter } from "./Counter";
@@ -24,6 +25,7 @@ export function App(){
             <Counter/>
             <MouseClicker/>
             <Clock/>
+            <InteractiveWelcome/>
         </div>
     )
 }
