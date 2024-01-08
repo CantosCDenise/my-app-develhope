@@ -9,6 +9,7 @@ import { MouseClicker } from "./MouseClicker";
 import { Welcome } from "./Welcome";
 import { Login } from "./Login";
 import { UncontrolledLogin } from "./UncontrolledLogin";
+import { FocusableInput } from "./FocusableInput";
 
 export function App(){
     function handleShowTime(){
@@ -30,6 +31,7 @@ export function App(){
             <InteractiveWelcome/>
             <Login/>
             <UncontrolledLogin/>
+            <FocusableInput/>
         </div>
     )
 }
