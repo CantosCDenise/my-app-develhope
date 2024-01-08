@@ -10,6 +10,7 @@ import { Welcome } from "./Welcome";
 import { Login } from "./Login";
 import { UncontrolledLogin } from "./UncontrolledLogin";
 import { FocusableInput } from "./FocusableInput";
+import { MountedRef } from "./MountedRef";
 
 export function App(){
     function handleShowTime(){
@@ -32,6 +33,7 @@ export function App(){
             <Login/>
             <UncontrolledLogin/>
             <FocusableInput/>
+            <MountedRef/>
         </div>
     )
 }
