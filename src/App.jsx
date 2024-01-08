@@ -1,5 +1,5 @@
 import { Clock } from "../Clock";
-import { InteractiveWelcome } from "../InteractiveWelcome";
+import { InteractiveWelcome } from "./InteractiveWelcome";
 import { Age } from "./Age";
 import { AlertClock } from "./AlertClock";
 import { Counter } from "./Counter";

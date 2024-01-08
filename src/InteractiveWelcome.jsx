@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Welcome } from "./src/Welcome"
+import { Welcome } from "./Welcome"
 
 export function InteractiveWelcome(){
     const [username, setUsername] = useState('')
