@@ -1,3 +1,4 @@
+import { Clock } from "../Clock";
 import { Age } from "./Age";
 import { AlertClock } from "./AlertClock";
 import { Counter } from "./Counter";
@@ -22,6 +23,7 @@ export function App(){
             <AlertClock onClick={handleShowTime}/>
             <Counter/>
             <MouseClicker/>
+            <Clock/>
         </div>
     )
 }
