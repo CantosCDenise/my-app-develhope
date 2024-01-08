@@ -18,7 +18,6 @@ export function App(){
             <Hello/>
             <Hello/>
             <Message/>
-            <Age age={24}/>
             <Welcome name="Denise"/>
             <AlertClock onClick={handleShowTime}/>
             <Counter/>
