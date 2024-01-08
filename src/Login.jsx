@@ -29,17 +29,18 @@ export function Login (){
         setData(createData())
     }
 
-    function onLogin(){
+    function onLogin(event){
+        event.preventDefault()
         console.log(data)
     }
 
     return (
-        <div>
+        <form onSubmit={onLogin}>
             <input name="username" value={data.username} onChange={handleInputChange}/>
             <input name="password" value={data.password} type="password" onChange={handleInputChange}/>
             <input name="remember" checked={data.remember} type="checkbox" onChange={handleInputChange} />
-            <button name="login" disabled={!data.username || !data.password} onClick={onLogin}>Login</button>
-            <button onClick={handleResetForm}>Reset</button>
-        </div>
+            <button type="submit" name="login" disabled={!data.username || !data.password}>Login</button>
+            <button type="button" onClick={handleResetForm}>Reset</button>
+        </form>
     )
 }
