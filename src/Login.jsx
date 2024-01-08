@@ -1,11 +1,15 @@
 import { useState } from "react"
 
-export function Login (){
-    const [data, setData] = useState({
+function createData(){
+    return {
         username: '',
         password:'',
         remember: false,
-    })
+    }
+}
+
+export function Login (){
+    const [data, setData] = useState(createData())
 
     function handleInputChange(event){
         const name = event.target.name
@@ -21,12 +25,18 @@ export function Login (){
         })
     }
 
+    function handleResetForm(){
+        setData(createData())
+    }
+
 
     return (
         <form>
             <input name="username" value={data.username} onChange={handleInputChange}/>
             <input name="password" value={data.password} type="password" onChange={handleInputChange}/>
             <input name="remember" checked={data.remember} type="checkbox" onChange={handleInputChange} />
+            <button name="login" disabled={!data.username || !data.password} >Login</button>
+            <button onClick={handleResetForm}>Reset</button>
         </form>
     )
 }
