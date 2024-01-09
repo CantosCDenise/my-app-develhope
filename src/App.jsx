@@ -1,4 +1,4 @@
-import { Clock } from "../Clock";
+import { Clock } from "./Clock";
 import { InteractiveWelcome } from "./InteractiveWelcome";
 import { Age } from "./Age";
 import { AlertClock } from "./AlertClock";
