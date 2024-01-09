@@ -1,7 +1,7 @@
 import { Age } from "./Age";
 
 export function Welcome({ name, age = 24 }){
-    return <div>
+    return <div className="welcome">
         <strong> Welcome, {name}!</strong>
         <Age age={age}/>
         {age > 18 && <Age age={age}/>}
