@@ -13,6 +13,7 @@ import { FocusableInput } from "./FocusableInput";
 import { MountedRef } from "./MountedRef";
 import { Color } from "./Color";
 import { Colors } from "./Colors";
+import { Container } from "./Container";
 
 
 export function App(){
@@ -22,7 +23,7 @@ export function App(){
         alert(now.toLocaleTimeString())
     }
     return (
-        <div>
+        <Container title="My application">
             <Hello/>
             <Hello/>
             <Hello/>
@@ -37,7 +38,7 @@ export function App(){
             <UncontrolledLogin/>
             <FocusableInput/>
             <MountedRef/>
-            
-        </div>
+        </Container>
+        
     )
 }

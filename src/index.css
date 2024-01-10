@@ -2,3 +2,8 @@
     background-color: pink;
     border: 3px solid black;
 }
+
+.appContent{
+    background-color: white;
+    border: 3px solid red;
+}
