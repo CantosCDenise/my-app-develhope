@@ -1,9 +1,10 @@
+import { Color } from "./Color";
 
 export function Colors({items}){
     return (
         <ul>
             {items.map((item) =>(
-                <li key={item.id}>{item.name}</li>
+                <Color color={item}/>
             ))}
         </ul>
     )
