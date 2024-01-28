@@ -15,6 +15,7 @@ import { Color } from "./Color";
 import { Colors } from "./Colors";
 import { Container } from "./Container";
 import { List } from "./Checkpoint_22012024/List";
+import { GithubUser } from "./GithubUser";
 
 
 export function App(){
@@ -24,31 +25,30 @@ export function App(){
         alert(now.toLocaleTimeString())
     }
     return (
-        // <Container title="My application">
-        //     <Hello/>
-        //     <Hello/>
-        //     <Hello/>
-        //     <Message/>
-        //     <Welcome name="Denise"/>
-        //     <AlertClock onClick={handleShowTime}/>
-        //     <Counter/>
-        //     <MouseClicker/>
-        //     <Clock/>
-        //     <InteractiveWelcome/>
-        //     <Login/>
-        //     <UncontrolledLogin/>
-        //     <FocusableInput/>
-        //     <MountedRef/>
-        //     <Colors items={[
-        //         {id: 1,
-        //         name: "red"},
-        //         {id: 2,
-        //         name: "orange"},
-        //         {id: 3,
-        //         name: "yellow"},
-        //     ]} />
-        // </Container>
-        <List/>
-        
+         <Container title="My application">
+            <GithubUser username="CantosCDenise"/>
+             <Hello/>
+             <Hello/>
+             <Hello/>
+             <Message/>
+             <Welcome name="Denise"/>
+             <AlertClock onClick={handleShowTime}/>
+             <Counter/>
+             <MouseClicker/>
+             <Clock/>
+             <InteractiveWelcome/>
+             <Login/>
+             <UncontrolledLogin/>
+             <FocusableInput/>
+             <MountedRef/>
+             <Colors items={[
+                 {id: 1,
+                 name: "red"},
+                 {id: 2,
+                 name: "orange"},
+                 {id: 3,
+                 name: "yellow"},
+             ]} />
+         </Container>        
     )
 }
