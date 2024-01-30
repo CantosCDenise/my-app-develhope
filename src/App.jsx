@@ -17,6 +17,8 @@ import { Container } from "./Container";
 import { List } from "./Checkpoint_22012024/List";
 import { GithubUser } from "./GithubUser";
 import { GithubUsers } from "./GithubUsers";
+import { useCounter } from "./useCounter";
+import { HookCounter } from "./HookCounter";
 
 
 export function App(){
@@ -25,6 +27,8 @@ export function App(){
 
         alert(now.toLocaleTimeString())
     }
+
+
     return (
          <Container title="My application">
             {/* <GithubUser username="CantosCDenise"/> */}
@@ -52,6 +56,9 @@ export function App(){
                  name: "yellow"},
              ]} />
              <List/>
+             <HookCounter/>
+
+             
          </Container>        
     )
 }
