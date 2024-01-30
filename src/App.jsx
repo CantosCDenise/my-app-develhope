@@ -16,6 +16,7 @@ import { Colors } from "./Colors";
 import { Container } from "./Container";
 import { List } from "./Checkpoint_22012024/List";
 import { GithubUser } from "./GithubUser";
+import { GithubUsers } from "./GithubUsers";
 
 
 export function App(){
@@ -26,7 +27,8 @@ export function App(){
     }
     return (
          <Container title="My application">
-            <GithubUser username="CantosCDenise"/>
+            {/* <GithubUser username="CantosCDenise"/> */}
+            <GithubUsers/>
              <Hello/>
              <Hello/>
              <Hello/>
@@ -49,6 +51,7 @@ export function App(){
                  {id: 3,
                  name: "yellow"},
              ]} />
+             <List/>
          </Container>        
     )
 }

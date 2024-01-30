@@ -35,6 +35,8 @@ export function Login (){
     }
 
     return (
+        <div>
+            <h1>Login component</h1>
         <form onSubmit={onLogin}>
             <input name="username" value={data.username} onChange={handleInputChange}/>
             <input name="password" value={data.password} type="password" onChange={handleInputChange}/>
@@ -42,5 +44,7 @@ export function Login (){
             <button type="submit" name="login" disabled={!data.username || !data.password}>Login</button>
             <button type="button" onClick={handleResetForm}>Reset</button>
         </form>
+        {data && <h1>{data.username}</h1>}
+        </div>
     )
 }
