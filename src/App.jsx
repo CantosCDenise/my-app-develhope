@@ -46,6 +46,9 @@ export function App(){
             <Route path="/hello" element={<div><Hello/>
                 <Link to="/">Go home</Link>
                 </div>}/>
+            <Route path="*" element={<div><p>Not Found</p>
+                <Link to="/">Go home</Link>
+                </div>}/>
         </Routes>
         //  <Container title="My application">
         //     {/* <GithubUser username="CantosCDenise"/> */}
