@@ -20,6 +20,7 @@ import { GithubUsers } from "./GithubUsers";
 import { useCounter } from "./useCounter";
 import { HookCounter } from "./HookCounter";
 import { Route, Routes } from "react-router-dom";
+import { ShowGithubUsers } from "./ShowGithubUsers";
 
 
 export function App(){
@@ -34,6 +35,7 @@ export function App(){
         <Routes>
             <Route path="/" element={<Welcome name="Denise"/>}/>
             <Route path="/counter" element={<Counter/>}/>
+            <Route path="users/:username" element={<ShowGithubUsers/>}/>
         </Routes>
         //  <Container title="My application">
         //     {/* <GithubUser username="CantosCDenise"/> */}
