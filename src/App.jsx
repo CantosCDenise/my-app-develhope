@@ -19,7 +19,7 @@ import { GithubUser } from "./GithubUser";
 import { GithubUsers } from "./GithubUsers";
 import { useCounter } from "./useCounter";
 import { HookCounter } from "./HookCounter";
-import { Route, Routes } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 import { ShowGithubUsers } from "./ShowGithubUsers";
 
 
@@ -30,12 +30,22 @@ export function App(){
     //     alert(now.toLocaleTimeString())
     // }
 
-
     return (
         <Routes>
-            <Route path="/" element={<Welcome name="Denise"/>}/>
-            <Route path="/counter" element={<Counter/>}/>
-            <Route path="users/:username" element={<ShowGithubUsers/>}/>
+            <Route path="/" element={<div><Welcome name="Denise"/>
+                <Link to="/counter">Counter</Link>
+                <Link to="users/:username">Github user</Link>
+                <Link to="/hello">Hello</Link>
+                </div>}/>
+            <Route path="/counter" element={<div><Counter/>
+                <Link to="/">Go home</Link>
+                </div>}/>
+            <Route path="users/:username" element={<div><ShowGithubUsers/>
+                <Link to="/">Go home</Link>
+                </div>}/>
+            <Route path="/hello" element={<div><Hello/>
+                <Link to="/">Go home</Link>
+                </div>}/>
         </Routes>
         //  <Container title="My application">
         //     {/* <GithubUser username="CantosCDenise"/> */}
