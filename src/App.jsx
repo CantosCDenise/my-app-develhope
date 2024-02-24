@@ -19,46 +19,52 @@ import { GithubUser } from "./GithubUser";
 import { GithubUsers } from "./GithubUsers";
 import { useCounter } from "./useCounter";
 import { HookCounter } from "./HookCounter";
+import { Route, Routes } from "react-router-dom";
 
 
 export function App(){
-    function handleShowTime(){
-        const now = new Date()
+    // function handleShowTime(){
+    //     const now = new Date()
 
-        alert(now.toLocaleTimeString())
-    }
+    //     alert(now.toLocaleTimeString())
+    // }
 
 
     return (
-         <Container title="My application">
-            {/* <GithubUser username="CantosCDenise"/> */}
-            <GithubUsers/>
-             <Hello/>
-             <Hello/>
-             <Hello/>
-             <Message/>
-             <Welcome name="Denise"/>
-             <AlertClock onClick={handleShowTime}/>
-             <Counter/>
-             <MouseClicker/>
-             <Clock/>
-             <InteractiveWelcome/>
-             <Login/>
-             <UncontrolledLogin/>
-             <FocusableInput/>
-             <MountedRef/>
-             <Colors items={[
-                 {id: 1,
-                 name: "red"},
-                 {id: 2,
-                 name: "orange"},
-                 {id: 3,
-                 name: "yellow"},
-             ]} />
-             <List/>
-             <HookCounter/>
+        <Routes>
+            <Route path="/" element={<Welcome name="Denise"/>}/>
+        </Routes>
+        //  <Container title="My application">
+        //     {/* <GithubUser username="CantosCDenise"/> */}
+        //     <GithubUsers/>
+        //      <Hello/>
+        //      <Hello/>
+        //      <Hello/>
+        //      <Message/>
+        //      <Welcome name="Denise"/>
+        //      <AlertClock onClick={handleShowTime}/>
+        //      <Counter/>
+        //      <MouseClicker/>
+        //      <Clock/>
+        //      <InteractiveWelcome/>
+        //      <Login/>
+        //      <UncontrolledLogin/>
+        //      <FocusableInput/>
+        //      <MountedRef/>
+        //      <Colors items={[
+        //          {id: 1,
+        //          name: "red"},
+        //          {id: 2,
+        //          name: "orange"},
+        //          {id: 3,
+        //          name: "yellow"},
+        //      ]} />
+        //      <List/>
+        //      <HookCounter/>
 
              
-         </Container>        
+        //  </Container>        
+
+
     )
 }
